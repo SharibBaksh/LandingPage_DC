@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0078ff;
+}
+
+.nav-option a {
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s ;
+}
+
+.nav-option a:hover {
+    color: #000;
+}
+
+
+/* Hero-Section  */
+
+.main-container {
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #0078ff, #00d4ff);
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.content button {
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    color: #0078ff;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 10rem;
+    transition: 0.3s;
+}
+
+.content button:hover {
+    cursor: pointer;
+    background-color: rgb(230, 217, 217);
+}
+
+/* Footer  */
+
+.footer {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: #fff;
+    opacity: 0.8;
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding-right: 10px;
+}
+
+/* Responsive Design  */
+
+@media (max-width: 800px){
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .nav-option a {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
